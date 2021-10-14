@@ -1,0 +1,913 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+        
+        *{
+          scroll-behavior: smooth;
+        }
+        
+        body{
+          margin:0;
+          padding:0;
+          box-sizing: border-box;
+          background-color: #181818;
+        }
+        
+                    /* intro setup */
+        #intro , #intro_2 , #intro_3{
+          width:100%;
+          height: 100vh;
+          background-color: #181818;
+          text-align: center;
+        }
+        
+        #intro_2 , #intro_3 , #close_intro{
+          display:none;
+        }
+        
+        .intro_img , .intro_img_2{
+          width: 150px;
+          height:150px;
+          margin-top: 30vh;
+          animation-name: intro_img;
+          animation-duration: 2s;
+          animation-iteration-count: 1;
+        }
+        
+        .skip{
+          font-size: 16px;
+          font-family: 'Mulish', sans-serif;
+          color: whitesmoke;
+          position: absolute;
+          top: 0;
+          right: 20px;
+        }
+        
+        .intro_img_2{
+          width: 200px;
+          height:150px;
+        }
+        
+        @keyframes intro_img{
+          0%{
+            opacity: 0;
+            margin-top: 34vh;
+          }
+          100%{
+            margin-top: 30vh;
+            opacity: 1;
+          }
+        }
+        
+        .welcome{
+          font-size: 22px;
+          font-family: 'Caveat', cursive;
+          color: whitesmoke;
+        }
+        
+        #dot_1 , #dot_2 , #dot_3 , #dot_4 , #dot_5 , #dot_6 , #dot_7 , #dot_8 , #dot_9 {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #00ead3;
+          margin-left: 45vw;
+          animation-name: no_animation; 
+          animation-duration: 2s;
+          animation-iteration-count: 1;
+        }
+        
+        #dot_4 , #dot_5 , #dot_6{
+          margin-left: 50vw;
+          margin-top: -10px;
+          background-color: #121212;
+          background-image: none;
+        }
+        
+        #dot_7 , #dot_8 , #dot_9{
+          margin-left: 55vw;
+          margin-top: -10px;
+          background-color: #121212;
+          background-image: none;
+        }
+        
+        #nxt_btn{
+          width: 150px;
+          height: 30px;
+          border-radius:30px;
+          border:none;
+          font-size: 16px;
+          font-family: 'Mulish', sans-serif;
+          margin-top: 5vh;
+        }
+        
+                    /* end intro setup */
+               /* Start Home section setup */
+        .outer_box , .outer_box_2 {
+          display: flex;
+          width:100%;
+          height: 290px;
+          overflow-x: scroll;
+        }
+        
+        .trending , .trending_2{
+          font-size: 18px;
+          font-family: 'Mulish', sans-serif;
+          font-weight: 100;
+          color: whitesmoke;
+          margin: 20px 0 20px 20px;
+          position:fixed;
+        }
+        
+        .outer_box_2{
+          height: 200px;
+        }
+        
+        .trending_2{
+          margin-top: -20px;
+          margin-bottom: 20px;
+          margin-left: 20px;
+          position:fixed;
+        }
+        
+        .wallpaper , .wallpaper_last , .wallpaper_first{
+          width: 230px;
+          height: 145px;
+          margin: 20px 0 20px 20px;
+          border-radius:8px;
+        }
+        
+        .wallpaper_last{
+          width: 230px;
+          height: 145px;
+         /* border-right: 8px unfortunately didn't work here */
+          border-top-left-radius:8px;
+          border-bottom-left-radius:8px;
+          border-top-right-radius:16px;
+          border-bottom-right-radius:8px;
+          padding-right: 10px;
+        }
+        
+        .wallpaper_first{
+          margin-left: 40px;
+        }
+        
+        .right_arrow_icon{
+          width: 12px;
+          height:12px;
+          margin-left: 5px;
+        }
+        
+        .box_name{
+          min-width: 110px;
+          height:150px;
+          margin: 40px 0 20px 40px;
+        }
+        
+        .box , .box_2 , .box_3 , .box_4 , .box_5 , .box_6 , .box_7 , .box_8 , .box_9 , .box_10 , .box_11 , .box_12 , .box_13 , .box_14 , .box_15 , .box_16 , .box_17 , .box_18 , .box_19 , .box_20{
+          min-width: 110px;
+          height:110px;
+          background-image: linear-Gradient( 135deg , #a1c0ef , #ee8cc6);
+          border-radius: 22px;
+          margin-top: 20px;
+        }
+        
+        .box_2{
+          background-image: linear-gradient(135deg , #4ecdc4 , #3a5186);
+        }
+        
+        .box_3{
+          background-image: linear-gradient(135deg , #c8e063 , #56ab2f);
+        }
+        
+        .box_4{
+           background-image: linear-gradient(135deg , #bbccbb , #f8a500); 
+        }
+        
+        .box_5{
+          background-image: linear-gradient(135deg , #e8cbc0 , #636fa4);
+        }
+        
+        .box_6{
+          background-image: linear-gradient(135deg , #4ca2cd , #67b26f);
+        }
+        
+        .box_7{
+          background-image: linear-gradient(135deg , #f8ffae , #43c6ac);
+        }
+        
+        .box_8{
+          background-image: linear-gradient(135deg , #ffd69b , #ff7e5f);
+        }
+        
+        .box_9{
+          background-image: linear-gradient(135deg , #c4e0e5 , #4ca1af);
+        }
+        
+        .box_10{
+          background-image: linear-gradient(135deg , #64f38c , #f79d00);
+        }
+        /*
+        .box_11{
+          background-image: linear-gradient(135deg , #2980b9 , #283e51);
+        }
+        */
+        .box_11{
+          background-image: linear-gradient(135deg , #c2e59c , #64b3f4);
+        }
+        
+        .box_12{
+          background-image: linear-gradient(135deg , #92fe9d , /*#00c9ff */ #136a8a);
+        }
+        
+        .box_13{
+          background-image: linear-gradient(135deg , #83a4d4 , #b6fbff);
+        }
+        
+        .box_14{
+          background-image: linear-gradient(135deg , #aaffa9 , #11ffbd);
+        }
+        
+        .box_15{
+          background-image: linear-gradient(135deg , #c9ffbf , #ffafbd);
+        }
+        
+        .box_16{
+          background-image: linear-gradient(135deg , #77eed8 , #9eabe4);
+        }
+        
+        .box_17{
+          background-image: linear-gradient(135deg , #46ceca , #07688c);
+        }
+        
+        .box_18{
+          background-image: linear-gradient(135deg , #ff4040 , #660000);
+        }
+        
+        .box_19{
+          background-image: linear-gradient(135deg , #2e145d , #05122d);
+        }
+        
+        .box_20{
+          background-image: linear-gradient(135deg , #FFE863 , #8736AA);
+        }
+        
+        .extra_space{
+          min-width: 20px;
+          height:110px;
+          background-color: transparent;
+        }
+        
+        .circle{
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          background-color: #fff;
+          opacity: .2;
+          margin-top: 15px;
+          margin-left: 15px;
+          border-radius:50%;
+        }
+        
+        .ringtone_name{
+          font-size:16px;
+          font-family: 'Mulish', sans-serif;
+          font-weight: 900;
+          color: #fff;
+        }
+        
+        #play , #play_2 , #play_3 , #play_4 , #play_5 , #play_6 , #play_7 , #play_8 , #play_9 , #play_10 , #play_11 , #play_12 , #play_13 , #play_14 , #play_15 , #play_16 , #play_17 , #play_18 , #play_19 , #play_20{
+          display:block;
+          width: 20px;
+          height:20px;
+          position: relative;
+          margin-top: -54px;
+          margin-left: 46px;
+        }
+        
+        #pause , #pause_2 , #pause_3 , #pause_4 , #pause_5 , #pause_6 , #pause_7 , #pause_8 , #pause_9 , #pause_10 , #pause_11 , #pause_12 , #pause_13 , #pause_14 , #pause_15 , #pause_16 , #pause_17 , #pause_18 , #pause_19 , #pause_20{
+          display:none;
+          width: 20px;
+          height:20px;
+           position: relative;
+          margin-top: -55px;
+          margin-left: 45px;
+        }
+        
+        audio{
+          display:none;
+        }
+        
+        .bottom_category{
+          width: 100%;
+          height:55px;
+          background-color: darkslategray;
+          position: fixed;
+          bottom:0;
+          left: 0;
+        }
+        
+        #Home{
+          width:25%;
+          height: 55px;
+          background-color: darkslategray;
+          text-align: center;
+          overflow-y: hidden;
+          position: fixed;
+          bottom:0;
+          left: 0;
+        }
+        
+        #Home:hover , #Category:hover , #My_fav:hover , #Profile:hover{
+          animation-name: home_color;
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          background-color: #aaffa9;
+        }
+        
+        @keyframes home_color {
+          from{
+            background-color: darkslategray;
+          }
+          to{
+            background-color: #aaffa9;
+          }
+        }
+        
+        #Category_icon{
+          width: 25px;
+          height: 25px;
+          margin-top: 8px;
+        }
+        
+        #Home h2 , #Category h2 , #My_fav h2 , #Profile h2{
+          font-size: 12px;
+          color:whitesmoke;
+          font-family: 'Mulish', sans-serif;
+          font-weight: 900;
+          margin-top: 2px;
+        }
+        
+        #Category{
+          width:25%;
+          height:55px;
+          background-color: darkslategray;
+          text-align: center;
+          position: fixed;
+          bottom:0;
+          left: 25%;
+        }
+        
+        #Category:hover{
+          animation-name: Category_color;
+          background-color: #d9b85b;
+        }
+        
+        @keyframes Category_color {
+          from{
+            background-color: darkslategray;
+          }
+          to{
+            background-color: #d9b85b;
+          }
+        }
+        
+        #My_fav{
+          width:25%;
+          height:55px;
+          background-color: darkslategray;
+          text-align: center;
+          position: fixed;
+          bottom:0;
+          left: 50%;
+        }
+        
+        #My_fav:hover{
+          animation-name: My_fav_color;
+          background-color: #ffb1b1;
+        }
+        
+        @keyframes My_fav_color {
+          from{
+          background-color: darkslategray;
+          }
+          to{
+            background-color: #ffb1b1;
+          }
+        }
+        
+        #Profile{
+          width:25%;
+          height:55px;
+          background-color: darkslategray;
+          text-align: center;
+          position: fixed;
+          bottom:0;
+          left: 75%;
+        }
+        
+        #Profile:hover{
+          animation-name: profile_color;
+          background-color: #4ca1af;
+        }
+        
+        @keyframes profile_color {
+          from{
+            background-color: darkslategray;
+          }
+          to{
+            background-color: #4ca1af;
+          }
+        }
+        
+                    /* End Home section */
+                 /* Start Category section */
+        #category_output{
+          background-color: #181818;
+          display: none;
+        }
+        
+        .category_heading{
+          font-size: 26px;
+          font-family: 'Caveat', cursive;
+          color: whitesmoke;
+          text-align: center;
+          margin: 15px 0 30px 0;
+        }
+                   /* Lofi_Music Category */
+        #Classic{
+          width:324px;
+          height: 80px;
+          background-image: linear-gradient( 25deg , #74ebd5 , #acb6e5);
+          margin: auto;
+          margin-bottom: 30px;
+          border-radius:8px;
+        }
+        
+        .classic_bg_piano_icon{
+          display: flex;
+          width: 150px;
+          height: 80px;
+          border-top-left-radius: 8px;
+          opacity: .3;
+        }
+        
+        .classic_bg_icon{
+          display: flex;
+          width: 25px;
+          height: 25px;
+          margin-top: -55px;
+          transform: rotate(20deg);
+          opacity: .3;
+          margin-left: 258px;
+        }
+        
+        .category_name , .category_name_2 , .category_name_3 , .category_name_4 , .category_name_5{
+          font-size: 18px;
+          font-family: 'Mulish', sans-serif;
+          text-align: center;
+          padding: 28px 0 0 0;
+        }
+        
+        .category_name , .category_name_2 , .category_name_3 , .category_name_4{
+          padding: 0;
+          margin: 0;
+          margin-top: -55px;
+        }
+                 /* Top_remix category */
+        #Hip_hop{
+          width:324px;
+          height: 80px;
+          background-image: linear-gradient( 25deg , #bdfff3 ,  #2f80ed);
+          margin: auto;
+          margin-bottom: 30px;
+          border-radius:8px;
+        }
+        
+        .Hip-hop_bg_icon{
+          width: 35px;
+          height: 35px;
+          opacity: .7;
+          margin-top: 44px;
+          padding-left: 20px;
+        }
+        
+        .Hip-hop_bg_icon_2{
+          width: 35px;
+          height: 35px;
+          opacity: .7;
+          padding-left:30px;
+          position:relative;
+          top: -30px;
+        }
+        
+        .Hip_hop_bg_music_icon{
+          width: 70px;
+          height: 60px;
+          position: relative;
+          top: -47px;
+          left: 254px;
+          border-bottom-right-radius: 8px;
+          opacity: .3;
+        }
+                   /* Most_popular category */
+        #most_popular{
+          width:324px;
+          height: 80px;
+          background-image: linear-gradient( to right , #1cb5e0 , #222246);
+          margin:auto;
+          margin-bottom: 30px;
+          border-radius:8px;
+        }
+        
+        .most_popular_bg_star_icon{
+          width: 300px;
+          height: 80px;
+          position: relative;
+          left: 24px;
+          border-bottom-right-radius: 8px;
+          opacity: .2;
+        }
+        
+        .most_popular_bg_icon , .Top_international_bg_icon{
+          width: 25px;
+          height: 25px;
+          transform: rotate(-20deg);
+          opacity: .5;
+          position: relative;
+          left: 22px;
+          top: -45px;
+        }
+                /* Top_international Category */
+        #Top_international{
+          width:324px;
+          height: 80px;
+          background-image: linear-gradient( to right , #007991 , #78ffd6);
+          margin:auto;
+          margin-bottom: 30px;
+          border-radius:8px;
+        }
+        
+        .Top_international_bg_world_icon{
+          width: 150px;
+          height: 80px;
+          position: relative;
+          left: 174px;
+          border-bottom-right-radius: 8px;
+          opacity: .5;
+        }
+        
+        .Top_international_bg_icon{
+          opacity: .6;
+        }
+                  /* Top_hindi Category */
+        #Top_hindi{
+          width:324px;
+          height: 80px;
+          background-image: linear-gradient( to right , #6190e8 , #a7bfe8);
+          margin:auto;
+          margin-bottom: 75px;
+          border-radius:8px;
+        }
+        
+        .Top_hindi_bg_icon , .Top_hindi_bg_icon_2 , /*.Top_hindi_bg_icon_3 , it doesn't exist */.Top_hindi_bg_icon_4 , .Top_hindi_bg_icon_5 , .Top_hindi_bg_icon_6{
+          width: 35px;
+          height: 35px;
+          opacity:.6;
+          position: relative;
+          left: 20px;
+          top:-25px;
+        }
+        
+        .Top_hindi_bg_icon_2{
+          left: 15px;
+        }
+        
+        .Top_hindi_bg_icon_4{
+          left: 120px;
+          top: -20px;
+          opacity: .8;
+        }
+        
+        .Top_hindi_bg_icon_5{
+          width: 30px;
+          height: 30px;
+          top: -24px;
+          left: 120px;
+          opacity: .8;
+        }
+        
+        .Top_hindi_bg_icon_6{
+          width:20px;
+          height: 20px;
+          opacity: .3;
+          transform: rotate(20deg);
+          left: 120px;
+          top: -60px;
+        }
+        
+                   /* End Category section */
+                /* Start My_favourite section */
+        
+        #my_fav_output{
+          background-color: #181818;
+          display: none;
+        }
+        
+        .extra_space_2{
+          min-width: 20px;
+          height:25vh;
+          background-color: transparent;
+        }
+        
+        .empty_fav_icon{
+          display: block;
+          width: 180px;
+          height: 180px;
+          margin: auto;
+        }
+        
+        .empty_text{
+          font-size: 32px;
+          font-family: 'Caveat', cursive;
+          color: whitesmoke;
+          text-align: center;
+        }
+        
+                  /* End My_favourite section */
+                /* Start profile_output section */
+        
+        #profile_output{
+          background-color: #181818;
+          display: none;
+        }
+        
+        .extra_space_3{
+          min-width: 20px;
+          height:10vh;
+          background-color: transparent;
+        }
+        
+        .form_body{
+          width: 300px;
+          height: 400px;
+          background-color: #253f3f;
+          margin: auto;
+        }
+        
+        .profile_icon{
+          display: block;
+          width: 250px;
+          height: 180px;
+          margin: auto;
+        }
+                /* profile log-in & sign-in setup */
+        .login_signin{
+          display:flex;
+        }
+        
+        #login{
+          width: 150px;
+          height: 45px;
+          background-color: deepskyblue;
+          margin-top: -10px;
+        }
+        
+        #login h3 , #signin h3{
+          font-size: 26px;
+          font-weight: 900;
+          font-family: 'Caveat', cursive;
+          text-align: center;
+          position:relative;
+          top: -12px;
+        }
+        
+        #signin{
+          width: 150px;
+          height: 45px;
+          background-color: lightslategray;
+          margin-top: -10px;
+        }
+        
+        #signin h3{
+          border:none;
+        }
+        
+        .username_1 , .password_1{
+          width: 200px;
+          height: 25px;
+          text-align: center;
+          outline-color: palegreen;
+          margin: 20px 0 0 50px;
+          border:none;
+        }
+        
+        ::placeholder{
+          color:#253f3f;
+        }
+        
+        .btn_1{
+          width: 100px;
+          height: 25px;
+          margin: 20px 0 0 100px;
+          font-size: 16px;
+          font-weight: 100;
+          font-family: 'Marck Script', cursive;
+        }
+        
+        #signin_output{
+          display: none;
+        }
+                  /* start Inside Lofi Music */
+        
+        #lofi_output{
+          display:none;
+        }
+        
+        #close_lofi , #close_top_remix , #close_most_popular , #close_top_international , #close_top_Indian{
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top:20px;
+          left:20px;
+        }
+        
+        .category_heading{
+          font-size: 26px;
+          font-family: 'Caveat', cursive;
+          color: whitesmoke;
+          text-align: center;
+          margin: 15px 0 30px 0;
+        }
+        
+        .outer_song_body{
+          width: 80%;
+          height:60px;
+          background-color: #2F4562;
+          margin: 25px 0 0 10% ;
+          border-radius: 60px;
+        }
+        
+        .pause_play_background{
+          width:50px;
+          height:50px;
+          background-color: palegreen;
+          border-radius: 50%;
+          left: 5px;
+          position: relative;
+          top: 5px;
+        }
+        
+        #play_21 , #play_22 , #play_23 , #play_24 , #play_25 , #play_26 , #play_27 , #play_28 , #play_29 , #play_30 , #play_31 , #play_32 , #play_33 , #play_34 , #play_35 , #play_36 , #play_37 , #play_38 , #play_39 , #play_40{
+          display:block;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 17px;
+        }
+        
+        #pause_21 , #pause_22 , #pause_23 , #pause_24 , #pause_25 , #pause_26 , #pause_27 , #pause_28 , #pause_29 , #pause_30 , #pause_31 , #pause_32 , #pause_33 , #pause_34 , #pause_35 , #pause_36 , #pause_37 , #pause_38 , #pause_39 , #pause_40{
+          display:none;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 15px;
+        }
+        
+        audio{
+          display:none;
+        }
+        
+        .song_name{
+          color:whitesmoke;
+          width: 150px;
+          font-size: 16px;
+          font-family: 'Mulish', sans-serif;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          position :relative;
+          top: -54px;
+          margin-left: 70px;
+        }
+        
+        .singer{
+          display:block;
+          color:whitesmoke;
+          font-size: 12px;
+          font-family: 'Caveat', cursive;
+          position :relative;
+          top: -64px;
+          margin-left: 70px;
+        }
+        
+        .download_icon{
+          width: 20px;
+          height: 20px;
+          position :relative;
+          top: -104px;
+          margin-left: 230px;
+        }
+        
+        .more_icon{
+          width: 16px;
+          height:16px;
+          position :relative;
+          top: -126px;
+          margin-left: 255px;
+        }
+        
+                   /* Ends Inside Lofi Music */
+                /* start Inside top remix Music */
+        
+        #top_remix_output{
+          display:none;
+        }
+        
+        #play_41 , #play_42 , #play_43 , #play_44 , #play_45 , #play_46 , #play_47 , #play_48 , #play_49 , #play_50{
+          display:block;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 17px;
+        }
+        
+        #pause_41 , #pause_42 , #pause_43 , #pause_44 , #pause_45 , #pause_46 , #pause_47 , #pause_48 , #pause_49 , #pause_50{
+          display:none;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 15px;
+        }
+         
+                 /* Ends Inside top remix Music */
+               /* start Inside Most popular Music */
+        
+        #Most_popular_output{
+          display:none;
+        }
+        
+        #play_51 , #play_52 , #play_53 , #play_54 , #play_55 , #play_56 , #play_57 , #play_58 , #play_59 , #play_60{
+          display:block;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 17px;
+        }
+        
+        #pause_51 , #pause_52 , #pause_53 , #pause_54 , #pause_55 , #pause_56 , #pause_57 , #pause_58 , #pause_59 , #pause_60{
+          display:none;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 15px;
+        }
+        
+                  /* Ends Inside Most popular Music */
+               /* start Inside Top international Music */
+        
+        #Top_international_output{
+          display:none;
+        }
+        
+        #play_61 , #play_62 , #play_63 , #play_64 , #play_65 , #play_66 , #play_67 , #play_68 , #play_69 , #play_70{
+          display:block;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 17px;
+        }
+        
+        #pause_61 , #pause_62 , #pause_63 , #pause_64 , #pause_65 , #pause_66 , #pause_67 , #pause_68 , #pause_69 , #pause_70{
+          display:none;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 15px;
+        }
+        
+               /* Ends Inside Top international Music */
+                 /* start Inside Top Indian Music */
+        
+        #Top_Indian_output{
+          display:none; 
+        }
+        
+        #play_71 , #play_72 , #play_73 , #play_74 , #play_75 , #play_76 , #play_77 , #play_78 , #play_79 , #play_80{
+          display:block;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 17px;
+        }
+        
+        #pause_71 , #pause_72 , #pause_73 , #pause_74 , #pause_75 , #pause_76 , #pause_77 , #pause_78 , #pause_79 , #pause_80{
+          display:none;
+          width: 20px;
+          height:20px;
+          margin:0;
+          padding: 15px 0 0 15px;
+        }
+        
+        
+        
